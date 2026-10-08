@@ -119,7 +119,7 @@ export default function MenuBar({ editor }: MenuBarProps) {
           {options.slice(0, 3).map((option) => (
             <Toggle
               key={option.label}
-              pressed={option.active}
+              pressed={editor.isActive("bold")}
               onPressedChange={option.onClick}
               aria-label={option.label}
               title={option.label}
@@ -136,7 +136,7 @@ export default function MenuBar({ editor }: MenuBarProps) {
           {options.slice(3, 7).map((option) => (
             <Toggle
               key={option.label}
-              pressed={option.active}
+              pressed={editor.isActive("bold")}
               onPressedChange={option.onClick}
               aria-label={option.label}
               title={option.label}
@@ -153,7 +153,7 @@ export default function MenuBar({ editor }: MenuBarProps) {
           {options.slice(7, 11).map((option) => (
             <Toggle
               key={option.label}
-              pressed={option.active}
+              pressed={editor.isActive("bold")}
               onPressedChange={option.onClick}
               aria-label={option.label}
               title={option.label}
@@ -170,7 +170,7 @@ export default function MenuBar({ editor }: MenuBarProps) {
           {options.slice(11).map((option) => (
             <Toggle
               key={option.label}
-              pressed={option.active}
+              pressed={editor.isActive("bold")}
               onPressedChange={option.onClick}
               aria-label={option.label}
               title={option.label}
